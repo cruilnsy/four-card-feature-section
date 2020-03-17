@@ -1,0 +1,127 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap'); */
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+header h2 {
+    font-weight: 200;
+    font-size: 2.1em;
+}
+header h1 {
+    font-size: 2.1em;
+}
+header h3 {
+    font-weight: 200;
+    font-size: .9em;
+    text-align: center;
+    margin-top: 1em;
+    width: 450px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+article {
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.5);
+    height: 210px;
+    width: 270px;
+    border-radius: 5px / 4px;
+}
+article h4 {
+    font-size: 1.4em;
+}
+article p {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+article .image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    bottom: 0;
+}
+
+.supervisor {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.supervisor .image {
+    background: url('./images/icon-supervisor.svg') no-repeat;
+}
+.team-builder {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.team-builder .image {
+    background: url('./images/icon-team-builder.svg') no-repeat;
+}
+.karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    margin-top: 20px;
+}
+.karma .image {
+    background: url('./images/icon-karma.svg') no-repeat;
+}
+.calculator {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+.calculator .image {
+    background: url('./images/icon-calculator.svg') no-repeat;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 375px) {
+    header, section {
+        display: block;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 1.9em;
+    }
+    header h1 {
+        font-size: 1.9em;
+    }
+    header h3 {
+        font-weight: 200;
+        font-size: 1.1em;
+        text-align: center;
+        margin: 1em auto;
+        width: 320px;
+    }
+    section {
+        margin-top: 70px;
+    }
+    article {
+        margin-top: 30px;
+    }
+}
